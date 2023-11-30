@@ -30,7 +30,10 @@ button:hover {
     background-color: #fbbf24;
 }
 
-.page-wrapper {
+.pages-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-inline: 2%;
     padding-block: 2%;
     margin-bottom: 2%;
@@ -41,7 +44,7 @@ button:hover {
 }
 
 .page {
-    display: block;
+    display: flex;
     background: white;
     margin: 0 auto;
     margin-bottom: 0.5cm;
@@ -52,6 +55,15 @@ button:hover {
     transform: scale(1);
     transform-origin: top left;
     box-shadow: 0 0 0.5cm #eaeaea;
+    font-size: 1em;
+}
+
+.page p {
+    font-size: 1em;
+}
+
+.page h1 {
+    font-size: 2em;
 }
 
 .test {
