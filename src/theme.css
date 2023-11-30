@@ -10,3 +10,12 @@
 .col-2 {
     flex: 2;
 }
+
+p {
+    margin: 0;
+}
+.date {
+    font-size: 0.8em;
+    color: #999;
+    font-weight: 300;
+}
