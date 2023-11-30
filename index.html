@@ -27,16 +27,25 @@
     <div class="page-wrapper">
 
         <div class="page">
-            coucou
+
         </div>
     </div>
 
 </body>
 
+
 <script>
+
+    window.addEventListener('wheel', function (event) {
+        if (event.ctrlKey) {
+            event.preventDefault();
+        }
+    }, { passive: false });
 
     const page = document.querySelector('.page');
     let scale = 1;
+
+    const pageWrapper = document.querySelector('.page-wrapper');
 
     const zoomIn = document.querySelector('.zoomIn');
     const zoomOut = document.querySelector('.zoomOut');
@@ -54,6 +63,27 @@
     zoomIn.addEventListener('click', zoomInHandler);
 
     zoomOut.addEventListener('click', zoomOutHandler);
+
+    // Ajout d'un evenement ctrl + molette pour zoomer
+
+    pageWrapper.addEventListener('wheel', (e) => {
+        if (e.ctrlKey) {
+            if (e.deltaY < 0) {
+                zoomInHandler();
+            } else {
+                zoomOutHandler();
+            }
+        }
+    });
+
+    // Ajout d'un evenemtn shift + molette pour scroller horizontalement
+
+    pageWrapper.addEventListener('wheel', (e) => {
+        if (e.shiftKey) {
+            pageWrapper.scrollLeft += e.deltaY;
+        }
+    });
+
 
 
 </script>

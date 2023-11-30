@@ -33,7 +33,9 @@ button:hover {
 .page-wrapper {
     margin-inline: 2%;
     padding-block: 2%;
-    overflow: hidden;
+    margin-bottom: 2%;
+    overflow-x: auto;
+    overflow-y: hidden;
     flex: 1;
     box-sizing: border-box;
 }
@@ -48,8 +50,14 @@ button:hover {
     max-width: 50em;
     aspect-ratio: 1/1.414;
     transform: scale(1);
-    transform-origin: top;
+    transform-origin: top left;
     box-shadow: 0 0 0.5cm #eaeaea;
+}
+
+.test {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .page[size="A4"] {
