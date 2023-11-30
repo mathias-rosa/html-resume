@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243 244 246);
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.toolbox {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #fbbf24;
+}
+
+.page-wrapper {
+    margin-inline: 2%;
+    padding-block: 2%;
+    overflow: hidden;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.page {
+    display: block;
+    background: white;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    position: relative;
+    width: 100%;
+    max-width: 50em;
+    aspect-ratio: 1/1.414;
+    transform: scale(1);
+    transform-origin: top;
+    box-shadow: 0 0 0.5cm #eaeaea;
+}
+
+.page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+}
+
+@page {
+    size: 21cm 29.7cm;
+    margin: 0mm;
+}
