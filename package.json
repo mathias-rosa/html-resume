@@ -9,7 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/markdown-it": "^13.0.7",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "markdown-it": "^13.0.2",
+    "markdown-it-underline": "^1.0.1"
   }
 }

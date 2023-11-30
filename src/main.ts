@@ -5,12 +5,15 @@ import resume from './resume.md?raw'
 const pagesWrapper = document.querySelector('.pages-wrapper') as HTMLDivElement
 
 import markdownIt from 'markdown-it'
+import underline from 'markdown-it-underline'
 
 let md = markdownIt({
     html: true,
     linkify: true,
     typographer: true,
 })
+
+md.use(underline)
 
 let pages = resume.split('---')
 let HTMLPages: HTMLDivElement[] = [];
