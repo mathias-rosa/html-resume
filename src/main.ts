@@ -26,11 +26,7 @@ pages.forEach((page) => {
     HTMLPages.push(div);
 })
 
-window.addEventListener('wheel', function (event) {
-    if (event.ctrlKey) {
-        event.preventDefault();
-    }
-}, { passive: false });
+
 
 let scale = 1;
 
@@ -53,13 +49,24 @@ const zoomOutHandler = () => {
         // page.style.transform = `scale(${scale})`;
         page.style.width = `${scale * 100}%`;
         page.style.fontSize = `${scale * 10}px`;
+    });
+}
 
-
+const resetZoom = () => {
+    scale = 1;
+    HTMLPages.forEach(page => {
+        // page.style.transform = `scale(${scale})`;
+        page.style.width = `${scale * 100}%`;
+        page.style.fontSize = `${scale * 10}px`;
     });
 }
 
 const zoomIn = document.querySelector('.zoomIn');
 const zoomOut = document.querySelector('.zoomOut');
+const resetZoomButton = document.querySelector('.resetZoom');
+
+if (resetZoomButton)
+    resetZoomButton.addEventListener('click', resetZoom);
 
 if (zoomIn)
     zoomIn.addEventListener('click', zoomInHandler);
@@ -86,3 +93,72 @@ pagesWrapper.addEventListener('wheel', (e) => {
         pagesWrapper.scrollLeft += e.deltaY;
     }
 });
+
+// Print button
+
+
+const printResume = () => {
+
+    // On reset le zoom
+
+    resetZoom();
+
+    // On clone le DOM
+    const save = document.body.innerHTML;
+
+    // On récupère les pages
+
+    const pages = document.createElement('div');
+
+    pagesWrapper.childNodes.forEach((page, index) => {
+        pages.appendChild(page.cloneNode(true));
+    });
+
+
+    // On supprime tout
+    document.body.innerHTML = '';
+
+    // On ajoute le clone
+    document.body.appendChild(pages);
+
+    document.querySelectorAll<HTMLDivElement>('.page').forEach((page) => {
+        page.style.fontSize = '1em';
+    });
+
+    // On imprime
+
+    window.print();
+
+    // On supprime tout
+    document.body.innerHTML = '';
+
+    // On remet tout en place
+
+    document.body.innerHTML = save;
+
+}
+
+const printButton = document.querySelector('.print');
+
+
+if (printButton) {
+    printButton.addEventListener('click', () => {
+        printResume();
+    });
+}
+
+
+// Prevent default 
+
+window.addEventListener('wheel', function (event) {
+    if (event.ctrlKey) {
+        event.preventDefault();
+    }
+}, { passive: false });
+
+window.addEventListener('keydown', function (event) {
+    if (event.ctrlKey && event.key === 'p') {
+        event.preventDefault();
+        printResume();
+    }
+}, { passive: false });

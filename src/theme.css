@@ -1,21 +1,100 @@
 .page > div {
-    padding: 2%;
+    padding: 3%;
 }
 
 .col-1 {
     flex: 1;
-    background-color: aliceblue;
+    color: white;
+    background-color: #2a2e47;
 }
 
 .col-2 {
     flex: 2;
+    color: #2a2e47;
+    padding-top: 0 !important;
 }
 
-p {
+.col-1 p {
+    color: white;
+}
+
+h1 {
+    color: #00b0e0;
+    line-height: 1.3em;
+    font-weight: 600;
+    font-size: 1.5em;
     margin: 0;
+    margin-top: 1.5em;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 1em;
+    height: 2px;
+    background-color: #00b0e0;
+    /* opacity: 0.5; */
+    margin: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.col-1 a {
+    color: white;
+}
+
+h2 {
+    line-height: 1.3em;
+    font-size: 1.25em;
+    margin: 0;
+    font-weight: 500;
+}
+p {
+    line-height: 1.25em;
+    margin-block: 0.5em;
+    margin-inline: 0;
 }
 .date {
-    font-size: 0.8em;
     color: #999;
     font-weight: 300;
+}
+
+ul {
+    padding-left: 2em;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+}
+
+.no-bullet li {
+    list-style: none;
+}
+
+.name {
+    margin-block: 2em;
+}
+
+.name p {
+    font-size: 2.25em;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2em;
+}
+
+.contact {
+    margin-block: 0.75em;
+}
+
+.contact p {
+    margin: 0;
+    margin-block: 0.25em;
 }

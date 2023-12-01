@@ -55,15 +55,7 @@ button:hover {
     transform: scale(1);
     transform-origin: top left;
     box-shadow: 0 0 0.5cm #eaeaea;
-    font-size: 1em;
-}
-
-.page p {
-    font-size: 1em;
-}
-
-.page h1 {
-    font-size: 2em;
+    font-size: 10px;
 }
 
 .test {
