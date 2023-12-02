@@ -37,35 +37,33 @@
 
 </div>
 
+# INTERESTS
 
-# COMPUTER SCIENCE SKILLS
+Design
 
-**Programing:** Python, JavaScript, TypeScript, Vue, React Native, HTML, CSS, C, C++, Java, LaTeX, Bash
+UX/UI
 
-**OS** : Windows, Linux
+Web Developmen
 
-**Softwares** :  Git, Figma, MS Office, Relational Databases, Mongo DB, VMware…
+Travelling
 
-# LANGUAGES
+ - Road trips in Northern America and Europe
 
-**French** – Native
+Cultural school trip in Greece
 
-**English** – Fluent
+Airplane Industry
 
-**Spanish** – Working knowledge
+Cooking
 
-**Portuguese** – Beginner level
-
-**German** – Beginner level
 
 </div > 
 <div class= "col-2 no-bullet" >
 
 # PROFILE
 
-**Engineering student** in **computer science** at **ENSEIRB-MATMECA** seeking a 12-week **Internship** from **June** 2024 to **September** 2024. 
-Currently in my 4<sup>th</sup> / 5 year in the French higher education system.
+French **Engineering student** in **computer science** at **ENSEIRB-MATMECA** seeking a **12-week Internship** from **June** 2024 to **September** 2024. 
 
+Currently in my 4<sup>th</sup> / 5 year in the French higher education system.
 
 # EDUCATION
 
@@ -95,6 +93,17 @@ Programing paradigms, Data Structures and Algorithms, DBMS, Internet and Network
 - _Option:_ European English Class
 
 
+# WORK EXPERIENCE
+
+## Internship at [“Département de La Réunion”](https://www.departement974.fr/)
+<p class="date">May 2022 - June 2022 ( 6 weeks )</p>
+
+- DBMS mapping.
+
+## Internship in the Webmaster department at “Carif-Oref Réunion”
+<p class="date">February 2017 ( 1 week )</p>
+
+- Learning the Joomla CMS.
 
 </div > 
 
@@ -102,40 +111,31 @@ Programing paradigms, Data Structures and Algorithms, DBMS, Internet and Network
 
 <div class= "col-1" >
 
-# INTERESTS
 
-Design
+# COMPUTER SCIENCE SKILLS
 
-UX/UI
+**Programing:** Python, JavaScript, TypeScript, Vue, React Native, HTML, CSS, C, C++, Java, LaTeX, Bash
 
-Web Developmen
+**OS** : Windows, Linux
 
-Travelling
+**Softwares** :  Git, Figma, MS Office, Relational Databases, Mongo DB, VMware…
 
- - Road trips in Northern America and Europe
+# LANGUAGES
 
-Cultural school trip in Greece
+**French** – Native
 
-Airplane Industry
+**English** – Fluent
 
-Cooking
+**Spanish** – Working knowledge
+
+**Portuguese** – Beginner level
+
+**German** – Beginner level
 
 
 </div > 
 <div class= "col-2" >
 
-# WORK EXPERIENCE
-
-Internship at [“Département de La Réunion”](https://www.departement974.fr/)
-<p class="date">May 2022 - June 2022 ( 6 weeks )</p>
-
-- DBMS mapping.
-
-Internship in the Webmaster department at “Carif-Oref Réunion”
-<p class="date">February 2017 ( 1 week )</p>
-
-
-- Learning the Joomla CMS.
 
 # STUDENT COMMITMENT
 
@@ -150,15 +150,35 @@ Internship in the Webmaster department at “Carif-Oref Réunion”
 <p class="date">Communication, Co-Web Manager</p>
 
 - Social networks management
-- Websites management and development
+- Websites management
+  - Development of a Food delivery website
+  - Design and development of a payment app
+  - Development of a switchboard service
+  - Development of a shotgun application for mentees
+- Poster design
 - Student event organization
 
 ## **Video Club** – Club VOST
 <p class="date">Stage manager</p>
 
 - Filming, Editing
-- Stage management for presentations and concerts
+- Stage management for in-school presentations and concerts
 
 
 
-</div > 
+# PERSONAL PROJECTS
+
+Development and Maintenance of a website offering different tools to the students of “La Prépa des INP” in La Reunion.
+- Tech Stack: Python (Flask, Selenium…), HTML, CSS, JavaScript
+
+# ACADEMIC PROJECTS
+
+- Development of a CRM for the Schools’ Junior Entreprise applying the agile method within a team of 7 students. 
+- Development of a carpooling website in **FastAPI**, **VueJS** and **MySQL**
+- Implementing the Amazons game in C to learn **advanced C programming techniques** and *graphs*.
+- Development of a Tower Defense game in **TypeScript** using the functional programming paradigm.
+- Generic board games implementation in C
+
+
+
+</div >
