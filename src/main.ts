@@ -108,24 +108,34 @@ const printResume = () => {
 
     // On récupère les pages
 
-    const pages = document.createElement('div');
+    const pages: string[] = [];
 
-    pagesWrapper.childNodes.forEach((page, index) => {
-        pages.appendChild(page.cloneNode(true));
+    document.querySelectorAll<HTMLDivElement>('.page').forEach((page) => {
+        pages.push(page.outerHTML);
     });
-
 
     // On supprime tout
     document.body.innerHTML = '';
 
-    // On ajoute le clone
-    document.body.appendChild(pages);
+    // On ajoute les pages
 
-    document.querySelectorAll<HTMLDivElement>('.page').forEach((page) => {
-        page.style.fontSize = '1em';
+    pages.forEach((page) => {
+        document.body.innerHTML += page;
     });
 
-    // On imprime
+    // On applique un style à chaque page
+
+    document.querySelectorAll<HTMLDivElement>('.page').forEach((page) => {
+        page.style.boxShadow = 'none';
+        page.style.marginBottom = '0';
+        page.style.margin = '0';
+        page.style.fontSize = '15.75px';
+        page.style.width = '100%';
+        page.style.maxWidth = '100%';
+    });
+
+
+    // // On imprime
 
     window.print();
 

@@ -52,7 +52,6 @@ button:hover {
     width: 100%;
     max-width: 50em;
     aspect-ratio: 1/1.414;
-    transform: scale(1);
     transform-origin: top left;
     box-shadow: 0 0 0.5cm #eaeaea;
     font-size: 10px;

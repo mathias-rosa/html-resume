@@ -43,7 +43,7 @@ Design
 
 UX/UI
 
-Web Developmen
+Web Development
 
 Travelling
 
@@ -173,9 +173,9 @@ Development and Maintenance of a website offering different tools to the student
 
 # ACADEMIC PROJECTS
 
-- Development of a CRM for the Schools’ Junior Entreprise applying the agile method within a team of 7 students. 
+- Development of a CRM for the Schools’ Junior Entreprise applying the **agile method** within a team of 7 students. 
 - Development of a carpooling website in **FastAPI**, **VueJS** and **MySQL**
-- Implementing the Amazons game in C to learn **advanced C programming techniques** and *graphs*.
+- Implementing the Amazons game in C to learn **advanced C programming techniques** and **graphs**.
 - Development of a Tower Defense game in **TypeScript** using the functional programming paradigm.
 - Generic board games implementation in C
 
